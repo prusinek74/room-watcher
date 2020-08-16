@@ -16,6 +16,7 @@ namespace room_watcher.Data
             DbContextOptions options,
             IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
         {
+            Database.Migrate();
         }
     }
 }
